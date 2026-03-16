@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Statista Style Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #1a1a1a;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #0b1c2d;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header button {
+    background: #7bd300;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h4 {
+    color: #1b66d1;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+/* ===== REPORT CARDS ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.badge {
+    display: inline-block;
+    background: #1b66d1;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== PRICING ===== */
+.pricing-section {
+    background: #ffffff;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+
+}
+
+.plan {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.plan h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+   
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+     
+}
+
+.plan p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.plan button {
+    padding: 12px 25px;
+    border: 1px solid #1b66d1;
+    background: transparent;
+    color: #1b66d1;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.plan.highlight {
+    border: 2px solid #1b66d1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">statista</div>
+    <button>Order now</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h4>NEWS & REPORTS</h4>
+    <h1>Expert research in condensed form</h1>
+</section>
+
+<!-- REPORT CARDS -->
+<section class="cards">
+    <div class="card">
+        <img src="hello1.jpg" alt="">
+        <div class="content">
+            <span class="badge">NEW</span>
+            <h3>Consumer Insights: Brand KPI survey data</h3>
+            <p>We track key performance indicators for over 10,000 brands across 125 categories.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hello2.jpg" alt="">
+        <div class="content">
+            <span class="badge">NEW</span>
+            <h3>Consumer Insights: Media survey data</h3>
+            <p>Explore how consumers interact with TV, streaming, podcasts, and social media.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hello3.jpg" alt="">
+        <div class="content">
+            <span class="badge">NEW</span>
+            <h3>Consumer Insights: Pulse survey data</h3>
+            <p>Monthly data tracking macro and micro trends across society and industries.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+    <h2>Access all statistics starting from 151,980 yearly</h2>
+
+    <div class="pricing">
+        <div class="plan">
+            <h3>Basic Account</h3>
+            <div class="price">rupees 0</div>
+            <p>Always free</p>
+            <ul>
+                <li> Free statistics</li>
+            </ul>
+            <button>Register now</button>
+        </div>
+
+        <div class="plan">
+            <h3>Starter Account</h3>
+            <div class="price">rupees 12,665</div>
+            <p>per month, billed annually</p>
+            <ul>
+                <li>Free + Premium statistics</li>
+            </ul>
+            <button>Buy now</button>
+        </div>
+
+        <div class="plan highlight">
+            <h3>Personal Account</h3>
+            <div class="price">61,758</div>
+            <p>per month, billed annually</p>
+            <ul>
+                <li>Free + Premium statistics</li>
+                <li>Reports</li>
+            </ul>
+            <button>Buy now</button>
+        </div>
+
+        <div class="plan">
+            <h3>Professional Account</h3>
+            <div class="price">131,392</div>
+            <p>per month, billed annually</p>
+            <ul>
+                <li>Free + Premium statistics</li>
+                <li>Reports</li>
+                <li> Market insights</li>
+            </ul>
+            <button>Buy now</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
